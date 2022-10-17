@@ -1,0 +1,20 @@
+.index-card {
+  position: relative;
+  display: inline-block;
+}
+.index-card .hidden {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.index-card:hover .hidden {
+  display: inline;
+}
+.div.box {
+    align-items: center;
+}
+.chart-box {
+    margin-bottom: 1rem;
+}
