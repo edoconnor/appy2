@@ -32,7 +32,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: 'doughnut-chart', component: DoughnutChartComponent },
-      { path: '', redirectTo: './home', pathMatch: 'full' },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: '**', component: PageNotFoundComponent },
     ]),
   ],
