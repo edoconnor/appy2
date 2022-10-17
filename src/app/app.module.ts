@@ -23,8 +23,9 @@ import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.componen
     MatIconModule,
     NgChartsModule,
     RouterModule.forRoot([
-      {path: 'home', component: HomeComponent},
-      {path: 'doughnut-chart', component: DoughnutChartComponent},
+      {path: './home', component: HomeComponent},
+      {path: './doughnut-chart', component: DoughnutChartComponent},
+      { path: '', redirectTo: './home', pathMatch: 'full' },
     ]),
   ],
   providers: [],
