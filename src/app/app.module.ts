@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
-
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -21,7 +21,11 @@ import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.componen
     MatButtonModule,
     HttpClientModule,
     MatIconModule,
-    NgChartsModule
+    NgChartsModule,
+    RouterModule.forRoot([
+      {path: 'home', component: HomeComponent},
+      {path: 'doughnut-chart', component: DoughnutChartComponent},
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent],
